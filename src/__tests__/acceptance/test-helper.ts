@@ -1,4 +1,4 @@
-import {StarterApplication} from '../..';
+import {Main} from '../..';
 import {
   createRestAppClient,
   givenHttpServerConfig,
@@ -14,7 +14,7 @@ export async function setupApplication(): Promise<AppWithClient> {
     // port: +process.env.PORT,
   });
 
-  const app = new StarterApplication({
+  const app = new Main({
     rest: restConfig,
   });
 
@@ -27,6 +27,6 @@ export async function setupApplication(): Promise<AppWithClient> {
 }
 
 export interface AppWithClient {
-  app: StarterApplication;
+  app: Main;
   client: Client;
 }
