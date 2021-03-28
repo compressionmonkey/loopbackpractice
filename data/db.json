@@ -1,0 +1,11 @@
+{
+  "ids": {
+    "Product": 3
+  },
+  "models": {
+    "Product": {
+      "1": "{\"title\":\"Mans in the house\",\"quantity\":100,\"price\":50,\"id\":1}",
+      "2": "{\"title\":\"boom ya\",\"quantity\":20,\"price\":90,\"id\":2}"
+    }
+  }
+}
