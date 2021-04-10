@@ -1,7 +1,7 @@
 {
   "name": "loopbackpractice",
   "version": "0.0.1",
-  "description": "mobile money ui",
+  "description": "",
   "keywords": [
     "loopback-application",
     "loopback"
@@ -34,6 +34,7 @@
     "rebuild": "npm run clean && npm run build",
     "prestart": "npm run rebuild",
     "start": "node -r source-map-support/register .",
+    "start:dev": "nodemon",
     "clean": "lb-clean dist *.tsbuildinfo .eslintcache"
   },
   "repository": {
@@ -55,14 +56,18 @@
     "@loopback/rest": "^9.1.3",
     "@loopback/rest-explorer": "^3.1.0",
     "@loopback/service-proxy": "^3.0.7",
+    "isemail": "^3.2.0",
+    "lodash": "^4.17.21",
     "loopback-connector-mongodb": "^5.5.0",
     "loopback-connector-mysql": "^5.4.4",
+    "nodemon": "^2.0.7",
     "tslib": "^2.0.0"
   },
   "devDependencies": {
     "@loopback/build": "^6.2.9",
     "@loopback/eslint-config": "^10.0.5",
     "@loopback/testlab": "^3.2.12",
+    "@types/lodash": "^4.14.168",
     "@types/node": "^10.17.51",
     "eslint": "^7.18.0",
     "source-map-support": "^0.5.19",

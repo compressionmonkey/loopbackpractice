@@ -44,6 +44,7 @@ export class PingController {
   @get('/ping')
   @response(200, PING_RESPONSE)
   ping(): object {
+    console.log('test')
     // Reply with a greeting, the current time, the url, and request headers
     return {
       greeting: 'Hello from LoopBack',
